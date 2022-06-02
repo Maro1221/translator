@@ -12,7 +12,7 @@ const[secondValue,setsecondValue]=useState("pl");
 
 function translate(){
     console.log( inputValue,firstValue,secondValue);
-    window.open("https://"+inputValue+".translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=pl&_x_tr_pto=wapp", '_blank');
+    window.open("https://www."+inputValue+".translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=pl&_x_tr_pto=wapp", '_blank');
 
 }
 
