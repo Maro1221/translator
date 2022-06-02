@@ -11,9 +11,37 @@ const[secondValue,setsecondValue]=useState("pl");
 
 
 function translate(){
-    console.log( inputValue,firstValue,secondValue);
-    window.open("https://www."+inputValue+".translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=pl&_x_tr_pto=wapp", '_blank');
 
+let flag=0
+    let link=inputValue;
+    if(link.substring(0,8)=="https://"){
+link=link.substring(8,link.length)
+    }
+
+    for(const i in link){
+        
+        if(link[i]=="."){
+            link=link.replace(link[i],"-")
+            
+        }
+    }
+
+    for(const i in link){
+        
+        if(link[i]=="/"){
+            link=link.replace(link[i],".translate.goog/");
+            flag=1
+
+            break
+ 
+        }
+    }
+if(flag==0){
+link=link.concat(".translate.goog/")
+}
+if(link!=""){
+    window.open("https://"+link+"/?_x_tr_sl="+firstValue+"&_x_tr_tl="+secondValue+"&_x_tr_hl=pl&_x_tr_pto=wapp", "_blank");
+}
 }
 
 
@@ -35,7 +63,7 @@ function translate(){
     </div>
     <div className="form2">
 
-      <div id="rotate2 " className="mt-5" >Wybierz język strony internetowej &darr;
+      <div id="rotate2 " className="mt-5 " >Wybierz język strony internetowej &darr;
       
    
 
@@ -44,7 +72,7 @@ function translate(){
       </div>
 
 
-    <select value={firstValue}  onChange={e => setfirstValue(e.target.value)} className="  pointer mx-auto" id="languages1">
+    <select value={firstValue}  onChange={e => setfirstValue(e.target.value)} className=" mt-3  pointer mx-auto" id="languages1">
       <option value="auto">Wykryj automatycznie</option>
       <option value="af">afrikaans</option>
       <option value="sq">albański</option>
@@ -163,7 +191,7 @@ function translate(){
  
     <div id="rotate3" className="mx-auto h5 mt-5  " >Wybierz język na który chcesz przetłumaczyć stronę &darr;</div>
  
-    <select   value={secondValue}  onChange={e => setsecondValue(e.target.value)} className="pointer"  id="languages2">
+    <select   value={secondValue}  onChange={e => setsecondValue(e.target.value)} className="mt-3 pointer"  id="languages2">
       <option value="af">afrikaans</option>
       <option value="sq">albański</option>
       <option value="am">amharski</option>
