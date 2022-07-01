@@ -12,7 +12,7 @@ export function Navbar(){
         <span className="ms-2 material-symbols-outlined">
 translate
 </span>
-<p className='inst'>  Prosta aplikacja pozwalająca przetłumaczyć dowolną stronę internetową </p>
+<p className=' mt-2 inst'>  Prosta aplikacja pozwalająca przetłumaczyć dowolną stronę internetową </p>
         </div>   
     )
 }
