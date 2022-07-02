@@ -75,6 +75,7 @@ padding-bottom: 20px;
     border-color: #e1381a !important;
     border-width: 4px !important;
     color: #d7c3bc !important;
+    border-radius: 0px !important;
 
 
   }
@@ -98,7 +99,6 @@ text-align: center !important;
     text-align: center;
 
    background-color: #d7c3bc	;
-   border-radius: 2px;
     padding: 3%;
     display: block;
     color: #242728;
@@ -142,12 +142,12 @@ margin-top: 4rem!important;
 
 
   width: 100%;
-  color: white;
+  color: #e1381a;
 padding-top: 22px;
 padding-bottom:12px;
-padding-right: 10px;
-
-    font-size: 14px;
+padding-right: 20px;
+font-weight: 800;
+    font-size: 19px;
     position:absolute;
     bottom:0;
 
@@ -180,7 +180,6 @@ margin-right: auto !important;
   text-align: center;
 
  background-color: #ffffff	;
- border-radius: 20px 20px 67px 20px !important;
   padding: 3%;
   display: block;
 

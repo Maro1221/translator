@@ -303,7 +303,7 @@ if(link!=""){
 
     </select>
     
-    <div className="  translateButton pointer shadow-sm mx-auto " onClick={() =>translate()}>Tłumacz stronę internetową</div>
+    <div className="  translateButton pointer mx-auto " onClick={() =>translate()}>Tłumacz stronę internetową</div>
 
 
 
