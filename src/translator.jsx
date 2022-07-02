@@ -54,7 +54,7 @@ if(link!=""){
 
     <div className="form1 mt-5">
 
-  <div  className='h5' >Wpisz link do strony internetowej którą chcesz przetłumaczyć
+  <div  className='' >Wpisz link do strony internetowej którą chcesz przetłumaczyć
 
     </div>
 
@@ -62,7 +62,7 @@ if(link!=""){
     </div>
     <div className="form2">
 
-      <div id="rotate2 " className="mt-5 h5 " >Wybierz język strony internetowej 
+      <div id="rotate2 " className="mt-5  " >Wybierz język strony internetowej 
       
    
 
@@ -188,7 +188,7 @@ if(link!=""){
   <div className="form3">
 
  
-    <div id="rotate3" className="mx-auto  h5  mt-5  " >Wybierz język na który chcesz przetłumaczyć stronę </div>
+    <div id="rotate3" className="mx-auto    mt-5  " >Wybierz język na który chcesz przetłumaczyć stronę </div>
  
     <select   value={secondValue}  onChange={e => setsecondValue(e.target.value)} className="form-select mt-3 pointer  mx-auto "  id="languages2">
       <option value="af">afrikaans</option>
