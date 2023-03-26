@@ -47,22 +47,20 @@ if(link!=""){
 
     return(
       <div className='content '>
-        <div id="translate-pool" className="mx-auto shadow-sm mt-5     ">
+        <div id="translate-pool" className="mx-auto shadow mt-md-2 mt-sm-3 mt-3    ">
 
 
 
 
-    <div className="form1 mt-5">
+    <div className="form1 mt-4">
 
-  <div  className='' >Wpisz link do strony internetowej którą chcesz przetłumaczyć
+  <div  className='' >Link:</div>
 
-    </div>
-
-  <input value={inputValue} className="pointer form-control" type="text" onChange={e => setinputValue(e.target.value)}/>
+  <input value={inputValue} className="pointer " type="text" onChange={e => setinputValue(e.target.value)}/>
     </div>
     <div className="form2">
 
-      <div id="rotate2 " className="mt-5  " >Wybierz język strony internetowej 
+      <div id="rotate2 " className="mt-5  " >Język strony internetowej:
       
    
 
@@ -71,7 +69,7 @@ if(link!=""){
       </div>
 
 
-    <select value={firstValue}  onChange={e => setfirstValue(e.target.value)} className=" mt-3  pointer  form-select mx-auto" id="languages1">
+    <select value={firstValue}  onChange={e => setfirstValue(e.target.value)} className=" mt-3  pointer   mx-auto" id="languages1">
       <option value="auto">Wykryj automatycznie</option>
       <option value="af">afrikaans</option>
       <option value="sq">albański</option>
@@ -188,9 +186,9 @@ if(link!=""){
   <div className="form3">
 
  
-    <div id="rotate3" className="mx-auto    mt-5  " >Wybierz język na który chcesz przetłumaczyć stronę </div>
+    <div id="rotate3" className="mx-auto    mt-5  " >Język na który chcesz przetłumaczyć: </div>
  
-    <select   value={secondValue}  onChange={e => setsecondValue(e.target.value)} className="form-select mt-3 pointer  mx-auto "  id="languages2">
+    <select   value={secondValue}  onChange={e => setsecondValue(e.target.value)} className=" mt-3 pointer  mx-auto "  id="languages2">
       <option value="af">afrikaans</option>
       <option value="sq">albański</option>
       <option value="am">amharski</option>

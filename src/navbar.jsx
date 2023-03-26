@@ -1,18 +1,14 @@
 import React from 'react';
 
-
+import logo from './logo.png';
 
 
 
 export function Navbar(){
     return(
-        <div id="baner" className="   ms-2 "> 
+        <div className=" baner"> 
         
-        Tłumacz stron internetowych
-        <span className="ms-2 material-symbols-outlined">
-translate
-</span>
-<p className=' mt-2 info'>  Prosta aplikacja pozwalająca przetłumaczyć dowolną stronę internetową </p>
+        <img src={logo} className='logo' alt="Logo" />        
         </div>   
     )
 }
